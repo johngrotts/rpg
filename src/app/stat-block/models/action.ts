@@ -1,5 +1,7 @@
+import { ActionType } from "../enums/action-type";
+
 export class Action {
   public name: string;
   public description: string;
-  public type: string; // ENUM (action, bonus action, reaction, ...)
+  public type: ActionType;
 }

@@ -4,5 +4,4 @@ export class Sense {
   public baseDiceLevel?: number; // 10
   public description?: string;
   public keyDetails?: string;
-
 }
