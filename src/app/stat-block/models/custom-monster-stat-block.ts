@@ -1,6 +1,6 @@
 import { BaseStatBlock } from "./base-stat-block";
 
-export class CustomMonsterStatBlock extends BaseStatBlock {
-  public basedOff: string;
-  public keywords: string[];
+export interface CustomMonsterStatBlock extends BaseStatBlock {
+  basedOff: string;
+  keywords: string[];
 }
