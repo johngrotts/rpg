@@ -11,12 +11,13 @@ import { Condition } from "../enums/condition";
 import { Skill } from "../enums/skill";
 import { LimitedUsage } from "../enums/limited-usage";
 import { Magic } from "../../magic/models/magic";
+import { HitPoints } from "../enums/hit-points";
 
 export interface BaseStatBlock {
   name: string;
   type: string;
   ac: number;
-  hp: number;
+  hp: HitPoints;
   stats: StatBlock[];
   magic?: Magic;
   speed?: KeyValue<string, number>[];
@@ -33,4 +34,5 @@ export interface BaseStatBlock {
   actions?: Action[];
   limitedUsages?: LimitedUsage[];
   imageFile?: any;
+  
 }
